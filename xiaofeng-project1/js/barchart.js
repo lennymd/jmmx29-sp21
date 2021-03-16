@@ -6,7 +6,7 @@ function barchart() {
 
   // append the svg object to the body of the page
   var svg = d3
-    .select('#barchart')
+    .select('#causes_of_death')
     .append('svg')
     .attr('width', width + margin.left + margin.right)
     .attr('height', height + margin.top + margin.bottom)
