@@ -1,0 +1,16 @@
+Changes TODO
+Include dotted gridlines behind each chart
+Change all gridlines and tick marks to gray color
+On false positives chart, get dots to match labels on X axis (can't see all the dots for some reason, cuts off on right)
+Give each chart better axis labels
+Put in a good image of the false accuracy rate yankee stadium diagram
+Put in better image of the facial scan, center
+Put in better image of facial comparison
+Learn how to do a chloropleth map in d3
+Make the layout more dynamic on large screens too(better for mobile right now, everything is in a single column)
+Data callout for a specific data point on the scatterplot
+Lables on top of the bar charts
+Turn the stacked bar chart horizontal (or at least try to see how it looks)
+Add light purple dividing seperators to the page with CSS
+Lessen left margins for the charts
+Make it more elegant... this is all the little stuff I'm not thinking of right now...
