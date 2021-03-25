@@ -1,12 +1,12 @@
 function piechart() {
   // set the dimensions and margins of the graph
-  let width = 200;
-  let height = 200;
+  let width = 300;
+  let height = 400;
   let margin = 50;
 
   // The radius of the pieplot is half the width or half the height (smallest one). I subtract a bit of margin.
   var radius = Math.min(width, height) / 2 - margin;
-
+  console.log(radius);
   // Create dummy data
   let pie_data = [
     {a: 54, b: 46},
@@ -21,11 +21,11 @@ function piechart() {
 
   let titles = [
     'Release Tension ',
-    'Boost Mental and Physical Strength',
+    '<tspan dx="0" dy="0">Boost Mental and</tspan> <tspan dy="35" dx="-215">Physical Strength</tspan>',
     'Alleviate Stress',
     'Feel happier',
     'Get a Workout',
-    'Ease Physical AilmentsEase Physical Ailments',
+    'Ease Physical Ailments',
     'Feel Less Lonely',
     'Detach from Technology',
   ];
@@ -53,8 +53,17 @@ function piechart() {
     // Now I know that group A goes from 0 degrees to x degrees and so on.
 
     // shape helper to build arcs:
-    var arcGenerator = d3.arc().innerRadius(100).outerRadius(radius);
+    var arcGenerator = d3.arc().innerRadius(50).outerRadius(radius);
     // Build the pie chart: Basically, each part of the pie is a path that we build using the arc function.
+    svg
+      .append('circle')
+      .attr('cx', 0)
+      .attr('cy', 0)
+      .attr('r', 100)
+      .attr('fill', 'none')
+      .attr('stroke', '#93a0a8')
+      .attr('stroke-width', 2);
+
     svg
       .selectAll('pie_slice')
       .data(data_ready)
@@ -64,9 +73,20 @@ function piechart() {
       .attr('fill', function (d) {
         return color(d.data.key);
       })
-      .attr('stroke', '#93a0a8')
-      .style('stroke-width', '2px')
       .style('opacity', 0.7);
+
+    // svg.attr('transform', function (d) {
+    //   if (d.data.key == 'a') {
+    //     console.log(d);
+    //     let percentage = d.value;
+    //     if (percentage < 50) {
+    //       console.log('smaller');
+    //       return `scale(-1)`;
+    //     } else {
+    //       return `scale(0)`;
+    //     }
+    //   }
+    // });
 
     // Now add the annotation. Use the centroid method to get the best coordinates
     // Now add the annotation. Use the centroid method to get the best coordinates
@@ -80,18 +100,21 @@ function piechart() {
           return d.data.value + '%';
         }
       })
-      .attr('transform', function (d) {
-        return 'translate(' + arcGenerator.centroid(d) + ')';
-      })
-      .style('text-anchor', 'middle')
-      .style('font-size', 17);
+      // .attr('transform', function (d) {
+      //   return 'translate(' + arcGenerator.centroid(d) + ')';
+      // })
+      .attr('dy', '15px')
+      .attr('text-anchor', 'middle')
+      .attr('font-size', 40)
+      .attr('fill', 'cornflowerblue')
+      .attr('font-weight', 900);
 
     svg
       .append('text')
-      .text(titles[i])
+      .html(titles[i])
       .attr('class', 'piechart_title')
       .attr('x', 0)
-      .attr('y', 80)
+      .attr('y', 140)
       .attr('fill', '#000')
       .attr('text-anchor', 'middle');
   }

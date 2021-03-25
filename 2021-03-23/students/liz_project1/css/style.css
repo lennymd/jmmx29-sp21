@@ -95,3 +95,10 @@ footer {
   font-family: 'Dancing Script', cursive;
   font-size: 175pt;
 }
+
+#trends-pie {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 20px;
+  row-gap: 30px;
+}
