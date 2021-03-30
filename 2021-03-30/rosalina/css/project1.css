@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+  background-color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18pt;
+  padding: 20px 200px 40px 200px;
+}
+
+.placeholder {
+  background-color: #f0f1f1;
+  height: 200 px;
+  color: black;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 10px;
+  padding-right: 3px;
+}
+
+.placeholder2 {
+  background-color: cornflowerblue;
+  height: 200px;
+  border: 1px solid black;
+}
+.placeholder1 {
+  background-color: goldenrod;
+  height: 400px;
+  border: 1px solid black;
+}
+
+.grid_container1 {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-auto-rows: minmax(100px, auto);
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+.group1 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+
+}
+.group2 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.group3 {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+h1 {
+  font-size: 50pt;
+  font-weight: 600;
+  text-align: center;
+}
+
+h2 {
+  font-size: 30pt;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 18pt;
+  font-weight: 600;
+  text-align: center;
+  padding: 0px 60px 0px 60px;
+}
+
+p {
+  font-size: 16pt;
+  font-weight: 300;
+}
+strong,
+b {
+  font-weight: 800;
+}
+
+/*modify barchart1 elements here*/
+.barchart_y_axis path.domain {
+  display: none;
+}
+.stackedbarchart_y_axis path.domain {
+  display: none;
+}
+.barchart_y_axis_text {
+  font-size: 14px;
+}
+.stackedbarchart_y_axis_text {
+  font-size: 14px;
+}
+.barchart1_bar_text {
+  font-size: 14px;
+}
+.barchart2_bar_text {
+  font-size: 14px;
+}
+
+/* modify linechart elements here */
+
+.x_axis path.domain {
+  display: none;
+}
+.y_axis path.domain {
+  display: none;
+}
+.y_axis g.tick line {
+  stroke: #d2d3d4;
+  stroke-dasharray: 1px 3px;
+}
+.x_axis g.tick line {
+  stroke: #d2d3d4;
+  stroke-dasharray: 1px 3px;
+}
+
+.linechart2_x_axis path.domain {
+  display: none;
+}
+.linechart2_y_axis path.domain {
+  display: none;
+}
+.linechart2_x_axis g.tick line {
+  stroke: #d2d3d4;
+  stroke-dasharray: 1px 3px;
+}
+.linechart2_y_axis g.tick line {
+  stroke: #d2d3d4;
+  stroke-dasharray: 1px 3px;
+}
+.linechart2_text1 {
+  font-size: 12px;
+}
+.linechart2_text2 {
+  font-size: 12px;
+}
+
+.legend_row {
+  display: flex;
+  position: relative;
+  top: -150px;
+ left: 640px;
+  align-items: center;
+  font-size: 14px;
+}
+.dot_label {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.dot1 {
+  background-color: #0e0933;
+}
+.label1 {
+  color: #0e0933;
+}
+.dot2 {
+  background-color: #60818e;
+}
+.label2 {
+  color: #60818e;
+}
+.dot3 {
+  background-color: #d48c78;
+}
+.label3 {
+  color: #d48c78;
+}
+.dot4 {
+  background-color: #93003a;
+}
+.label4 {
+  color: #93003a;
+}
