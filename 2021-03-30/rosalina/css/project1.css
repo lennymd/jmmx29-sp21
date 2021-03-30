@@ -31,7 +31,8 @@ body {
 .grid_container1 {
   display: grid;
   grid-template-columns: 3fr 1fr;
-  grid-auto-rows: minmax(100px, auto);
+  grid-template-rows: auto auto;
+  /* grid-auto-rows: minmax(100px, auto); */
   column-gap: 10px;
   row-gap: 10px;
 }
@@ -39,16 +40,17 @@ body {
 .group1 {
   grid-row-start: 1;
   grid-row-end: 3;
-
 }
 .group2 {
+  align-self: end;
   grid-row-start: 1;
-  grid-row-end: 3;
+  grid-row-end: 2;
   grid-column-start: 2;
   grid-column-end: 3;
 }
 
 .group3 {
+  align-self: end;
   grid-row-start: 2;
   grid-row-end: 3;
   grid-column-start: 2;
@@ -144,7 +146,7 @@ b {
   display: flex;
   position: relative;
   top: -150px;
- left: 640px;
+  left: 640px;
   align-items: center;
   font-size: 14px;
 }

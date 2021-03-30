@@ -22,7 +22,9 @@ h2 {
 
 .item {
   background: mistyrose;
-  justify-content: center;
+  /* justify-content: center; */
+  justify-self: center;
+  align-self: center;
 }
 
 .item1,
@@ -39,9 +41,8 @@ h2 {
 }
 
 .item_centered {
-  /* display: grid;
-  justify-content: center;
-  align-items: center; */
+  justify-self: center;
+  align-self: center;
 }
 .dance_moves {
   width: 100px;
@@ -51,6 +52,8 @@ h2 {
 
 .repeat {
   width: 60%;
+  display: block;
+  margin: 0 auto;
 }
 
 .item32 {

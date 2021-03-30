@@ -25,7 +25,10 @@ function stackedbarchart1() {
       })
       .keys();
 
-    var x = d3.scaleLinear().domain([0, 100]).range([0, width*0.7]);
+    var x = d3
+      .scaleLinear()
+      .domain([0, 100])
+      .range([0, width * 0.7]);
     svg.append('g').attr('transform', 'translate(0,' + height + ')');
 
     // Add Y axis
@@ -93,7 +96,7 @@ function stackedbarchart1() {
       .append('text')
       .attr('class', 'stackedbar_bar_text')
       .attr('x', function (d) {
-        return x(d[1]) -5;
+        return x(d[1]) - 5;
       })
       .attr('y', function (d) {
         return y(d.data.group) + y.bandwidth() / 2;
@@ -104,8 +107,6 @@ function stackedbarchart1() {
       })
       .attr('text-anchor', 'end')
       .attr('font-size', '12px');
-
-    
 
     //ADD A LEGEND TO THE GRAPH
 
