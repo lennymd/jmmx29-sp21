@@ -1,0 +1,13 @@
+Pink, #f27d90, R:242 G:125 B:144, C:0 M:64 Y:25 K:0
+
+Light Pink, #feecec, R:254 G:236 B:236, C:0 M:28 Y:14 K:0
+
+Magenta, #de1f6f, R:222 G:31 B:111, C:8 M:98 Y:32 K:0
+
+Blue, #106ea1, R:16 G:110 B:161, C:90 M:52 Y:18 K:2
+
+Dark Blue, #0e5478, R:14 G:84 B:120, C:96 M:65 Y:34 K:15
+
+Gray, #929fa7, R:x G:x B:x, C:46 M:x Y:x K:x
+
+Light Gray, #d4dde1, R:x G:x B:x, C:46 M:x Y:x K:x
