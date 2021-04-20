@@ -71,6 +71,7 @@ p {
   align-items: flex-end;
   margin: 20px 0px;
   padding: 0px;
+  justify-content: center;
 }
 
 .flex-container-item {
@@ -135,4 +136,66 @@ p {
 
 #yankee-graphic {
   max-width: 80%;
+  margin: 0 auto;
+  display: block;
+}
+
+/* How to center a chart with just basic CSS */
+.centered-chart {
+  margin: 0 auto;
+  display: block;
+}
+
+/* Extra Styles on false positive chart */
+
+/* NOTE: The following modifies the fill color for both the .x_axis text and the .y_axis text */
+#chart_false_positives .x_axis .tick text,
+#chart_false_positives .y_axis .tick text {
+  fill: white;
+}
+
+#chart_false_positives .x_axis .tick line {
+  stroke: white;
+}
+
+/* Extra Styles for the Bar Charts (accuracy and public trust) */
+/* Trust */
+.x_axis_trust .tick text {
+  fill: #ffffff;
+}
+.y_axis_trust .tick text {
+  fill: white;
+}
+
+/* this removes all the tick lines on the x-axis */
+.x_axis_trust .tick line {
+  display: none;
+}
+
+/* This makes the baseline for the x-axis white */
+.x_axis_trust .domain {
+  stroke: white;
+}
+
+/* this removes all the tick lines on the y-axis for trust */
+/* .y_axis_trust .domain,
+.y_axis_trust .tick line {
+  display: none;
+} */
+
+/* this removes the big vertical line on the y-axis */
+.y_axis_trust .domain {
+  display: none;
+}
+
+.y_axis_trust .tick line {
+  stroke: white;
+}
+
+/* accuracy */
+.x_axis_acc .tick text {
+  fill: white;
+}
+.x_axis_acc .tick line {
+  stroke: white;
 }

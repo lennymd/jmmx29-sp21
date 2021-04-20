@@ -14,7 +14,7 @@ function accuracy() {
     .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
   // Parse the Data
-  d3.csv('./data/accuracy.csv', function (data) {
+  d3.csv('./data/accuracy.csv').then(function (data) {
     // X axis
     var x = d3
       .scaleBand()
@@ -27,6 +27,7 @@ function accuracy() {
       .padding(0.2);
     svg
       .append('g')
+      .attr('class', 'x_axis_acc')
       .attr('transform', 'translate(0,' + height + ')')
       .call(d3.axisBottom(x))
       .selectAll('text')

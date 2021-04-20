@@ -1,9 +1,9 @@
-states,mortality,fips
+states,Mortality,fips
 Alabama,54,US01
 Alaska,71,US02
-Arizona,69
-Arkansas,58
-California,63
+Arizona,69,US04
+Arkansas,58,US05
+California,63,US06
 Colorado,72
 Connecticut,66
 Delaware,66

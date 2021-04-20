@@ -1,7 +1,7 @@
 function false_positives() {
   // set the dimensions and margins of the graph
   var margin = {top: 10, right: 30, bottom: 100, left: 60},
-    width = 460 - margin.left - margin.right,
+    width = 1060 - margin.left - margin.right,
     height = 400 - margin.top - margin.bottom;
 
   // append the svg object to the body of the page
@@ -14,7 +14,7 @@ function false_positives() {
     .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
   //Read the data
-  d3.csv('./data/false_positives.csv', function (data) {
+  d3.csv('./data/false_positives.csv').then(function (data) {
     // Add X axis
     //   var x = d3.scaleLinear()
     //     .domain([0, 4000])
@@ -34,6 +34,7 @@ function false_positives() {
       .padding(0.2);
     svg
       .append('g')
+      .attr('class', 'x_axis')
       .attr('transform', 'translate(0,' + height + ')')
       .call(d3.axisBottom(x))
       .selectAll('text')
@@ -43,7 +44,7 @@ function false_positives() {
 
     // Add Y axis
     var y = d3.scaleLinear().domain([0, 1]).range([height, 0]);
-    svg.append('g').call(d3.axisLeft(y));
+    svg.append('g').attr('class', 'y_axis').call(d3.axisLeft(y));
 
     // Add dots
     svg

@@ -14,7 +14,7 @@ function public_trust() {
     .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
   // Parse the Data
-  d3.csv('./data/public_trust.csv', function (data) {
+  d3.csv('./data/public_trust.csv').then(function (data) {
     // List of subgroups = header of the csv files = soil condition here
     var subgroups = data.columns.slice(1);
 
@@ -29,14 +29,17 @@ function public_trust() {
     var x = d3.scaleBand().domain(groups).range([0, width]).padding([0.2]);
     svg
       .append('g')
+      .attr('class', 'x_axis_trust')
       .attr('transform', 'translate(0,' + height + ')')
       .style('stroke-color', '#a7a9ac')
       .call(d3.axisBottom(x).tickSizeOuter(0));
 
     // Add Y axis
     var y = d3.scaleLinear().domain([0, 70]).range([height, 0]);
-    svg.append('g').call(d3.axisLeft(y).ticks(7));
+    svg.append('g').attr('class', 'y_axis_trust').call(d3.axisLeft(y).ticks(7));
 
+    // d3.select('.y_axis_trust').selectAll('text').attr('dx', '5px');
+    // d3.select('.y_axis_trust').selectAll('line').attr('dx', '5px');
     // color palette = one color per subgroup
     var color = d3
       .scaleOrdinal()
@@ -75,6 +78,15 @@ function public_trust() {
         return y(d[0]) - y(d[1]);
       })
       .attr('width', x.bandwidth());
+
+    svg
+      .append('line')
+      .attr('x1', -6)
+      .attr('y1', height)
+      .attr('x2', width + 1)
+      .attr('y2', height)
+      .attr('stroke', 'white')
+      .attr('stroke-width', 2);
   });
 }
 
