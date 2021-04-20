@@ -1,0 +1,8 @@
+4/16/2020
+
+1. Linechart1 and Linechart2: 
+x-axis labels - move down
+2. Stacked bar chart:
+Fix legend 
+3. Maps: fix space between text and map.
+
