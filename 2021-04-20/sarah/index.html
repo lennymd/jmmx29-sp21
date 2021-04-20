@@ -1,93 +1,121 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Horizontal Bar Chart</title>
-        <link rel="stylesheet" href="facial_recognition.css">
-    </head>
+  <head>
+    <meta charset="utf-8" />
+    <title>Horizontal Bar Chart</title>
+    <link rel="stylesheet" href="facial_recognition.css" />
+  </head>
 
-<body>
+  <body>
+    <h1>Can we trust facial recognition?</h1>
 
-  <h1>Can we trust facial recognition?</h1>
+    <p id="tagline">
+      As facial recognition gains prominence with law enforcement, should
+      Americans be asking how much we know about its accuracy and how its being
+      used?
+    </p>
 
-  <p id="tagline">As facial recognition gains prominence with law enforcement, should Americans be asking how much we know about its accuracy and how its being used?</p>
+    <div class="flex-container">
+      <img
+        class="flex-container-item purple-face-image"
+        src="./img/FaceProfile.png"
+      />
 
-<div class="flex-container">
-  
-  <img class="flex-container-item purple-face-image" src="./FaceProfile.png">
+      <p class="flex-container-item">
+        Artificial intelligence algorithms map your face and then converts the
+        map into a mathematical equation that is compared to other faces in the
+        available database. The computer resturns results that appear similar to
+        the photo and gives a confidence score to show the liklihood that each
+        result is accurate.
+      </p>
 
-  <p class="flex-container-item">Artificial intelligence algorithms map your face and then converts the map into a mathematical equation that is compared to other faces in the available database. The computer resturns results that appear similar to the photo and gives a confidence score to show the liklihood that each result is accurate.</p>
-  
-  <div class="flex-container-item">
-    <div class="face-match-div">
-      <img class="face-match-image" src="./Ali.png">
-      <img class="face-match-image" src="./Lauren.png">
+      <div class="flex-container-item">
+        <div class="face-match-div">
+          <img class="face-match-image" src="./img/Ali.png" />
+          <img class="face-match-image" src="./img/Lauren.png" />
+        </div>
+        <div class="face-match-div">
+          <img class="face-match-image" src="./img/Sarah.png" />
+          <img class="face-match-image" src="./img/Howie.png" />
+        </div>
+      </div>
     </div>
-    <div class="face-match-div">
-      <img class="face-match-image" src="./Sarah.png">
-      <img class="face-match-image" src="./Howie.png">
+
+    <h2>Trust in facial recognition may stem from how results are shown</h2>
+    <p>
+      Often, facial recognition data shown to the public is from "best case
+      scenario" situations, such as high-quality photo comparison, which is
+      often not how the software is actually being used in the field.
+    </p>
+
+    <div class="flex-container-graphs">
+      <div class="flex-container-item" id="chart_public_trust"></div>
+      <div class="flex-container-item" id="chart_accuracy"></div>
     </div>
-  </div>
 
-</div>
+    <h2>Despite dangerous levels of mis-identification</h2>
 
+    <div class="flex-container-graphs">
+      <p>
+        <strong>False positive rate</strong> is the percentage of the time that
+        the algorithm says someone is a match when they are not a match. False
+        positives in a police context create
+        <strong>suspects out of innocent people</strong>
+      </p>
 
-  <h2>Trust in facial recognition may stem from how results are shown</h2>
-  <p>Often, facial recognition data shown to the public is from "best case scenario" situations, such as high-quality photo comparison, which is often not how the software is actually being used in the field.</p>
+      <div id="chart_false_positives"></div>
+    </div>
 
+    <h2>False positive rates and how they work</h2>
 
-<div class="flex-container-graphs">
-  <div class="flex-container-item" id="chart_public_trust"></div>
-  <div class="flex-container-item" id="chart_accuracy"></div>
-</div>
+    <p>
+      Let’s pretend there is a crime caught on tape at Yankee stadium. A picture
+      of each person is taken at security as they leave the stadium for police
+      to try to match with the tape. The Ayonix algorithm would place 118
+      innocent people under suspicion with <strong>no evidence</strong>, even
+      under ideal photo conditions.
+    </p>
 
-  <h2>Despite dangerous levels of mis-identification</h2>
+    <img id="yankee-graphic" src="./img/Yankee.png" />
 
-<div class="flex-container-graphs">
-  <p><strong>False positive rate</strong> is the percentage of the time that the algorithm says someone is a match when they are not a match. False positives in a police context create <strong>suspects out of 
-    innocent people</strong></p>
+    <h2>Facial recognition can be abused and misused by police</h2>
 
-  <div id="chart_false_positives"></div>
-</div>
+    <p>
+      Despite concerns of accuracy, most states allow the state police, FBI, or
+      both to run searches using the state drivers license photo database
+      without a warrant or probable cause
+    </p>
 
-  
+    <div class="infographic-placeholder">
+      chloropleth map of state and fbi use of facial recognition
+    </div>
 
-  <h2>False positive rates and how they work
-  </h2>
+    <p class="yellow-standout">
+      Nearly half of all U.S adults have their photo in at least one database
+      searchable by the FBI without a warrant
+    </p>
 
-  <p>Let’s pretend there is a crime caught on tape at Yankee stadium. A picture of each person is taken at security as they leave the stadium for police to try to match with the tape. The Ayonix algorithm would place 118 innocent people under suspicion with <strong>no evidence</strong>,  even under ideal photo conditions.</p>
+    <p id="yellow-number-standout">117,000,000</p>
 
-  <img id="yankee-graphic" src="./Yankee.png">
+    <p class="yellow-standout">
+      This does not include other federal agencies, state police, local police,
+      private security companies, or social media sites
+    </p>
 
-  <h2>Facial recognition can be abused and misused by police</h2>
+    <p></p>
 
-  <p>Despite concerns of accuracy, most states allow the state police, FBI, or both to run searches using the state drivers license photo database without a warrant or probable cause</p>
+    <p class="footnote-font">
+      <br />
+      <br />
+      Visualizations: Sarah Lilly <br />
+      Data: NIST 2019, ACLU, whohasyourface.org, Pew Center 2019
+    </p>
 
-  <div class= "infographic-placeholder">
-  chloropleth map of state and fbi use of facial recognition
-  </div>
-
-  <p class="yellow-standout">Nearly half of all U.S
-    adults have their photo in at least one database searchable by the FBI without a warrant</p>
-
-  <p id="yellow-number-standout">117,000,000</p>
-
-  <p class="yellow-standout">This does not include
-  other federal agencies,
-  state police, local police, private security companies, or social media sites<p>
-
-  <p class="footnote-font"> <br> <br>
-  Visualizations: Sarah Lilly <br>
-  Data: NIST 2019, ACLU, whohasyourface.org, Pew Center 2019 </p>  
-
-
-  <!-- ONLY JAVASCRIPT BELOW THIS LINE -->
+    <!-- ONLY JAVASCRIPT BELOW THIS LINE -->
     <script src="https://d3js.org/d3.v4.js"></script>
 
-    <script src= "./public_trust.js"> </script>
-    <script src= "./accuracy.js"> </script>
-    <script src="./false_positives.js"> </script>
-    
-</body>
-
+    <script src="./js/public_trust.js"></script>
+    <script src="./js/accuracy.js"></script>
+    <script src="./js/false_positives.js"></script>
+  </body>
 </html>
