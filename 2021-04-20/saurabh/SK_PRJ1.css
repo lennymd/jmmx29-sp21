@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 body {
   background-color: #ffe0b3;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 20pt;
   padding: 20px 80px 20px 80px;
 }
@@ -84,7 +84,7 @@ body {
 
 /*Third Para Heading*/
 #header4 {
-  color: #FF3333;
+  color: #ff3333;
   font-size: 24pt;
   font-weight: 400;
   /*text-align: center;*/
@@ -142,19 +142,19 @@ body {
 }
 
 .HLine1 {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #333399;
-    margin: 1em 0;
-    padding: 0;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #333399;
+  margin: 1em 0;
+  padding: 0;
 }
 
 .HLine2 {
-    display: block;
-    height: 2px;
-    border: 0;
-    border-top: 2px solid black;
-    margin: 1em 0;
-    padding: 0;
+  display: block;
+  height: 2px;
+  border: 0;
+  border-top: 2px solid black;
+  margin: 1em 0;
+  padding: 0;
 }
