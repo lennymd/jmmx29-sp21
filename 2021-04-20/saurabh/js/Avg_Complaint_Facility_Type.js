@@ -1,7 +1,7 @@
 function Avg_Complaint_Facility_Type(){
 // set the dimensions and margins of the graph
-let margin = {top: 30, right: 30, bottom: 50, left: 30}, 
-width = 675 - margin.left - margin.right,
+let margin = {top: 30, right: 10, bottom: 50, left: 40}, 
+width = 350 - margin.left - margin.right,
 height = 375 - margin.top - margin.bottom;
 
       // append the svg object to the body of the page

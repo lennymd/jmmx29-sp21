@@ -1,43 +1,40 @@
-h1{
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap');
+
+body {
+  font-family: 'Baskervville', serif;
+}
+
+h1 {
   color: Black;
   font-size: 70pt;
   font-weight: 700;
   padding-left: 200px;
   margin-top: 0px;
-  
+}
+.image-th {
+  width: 1000px;
+  height: 500px;
 }
 .paragraph0 {
-  font-size:20pt;
-  
+  font-size: 20pt;
 }
 .paragraph {
-  font-size:14pt;
-  color:pink;
+  font-size: 14pt;
+  color: pink;
   width: 40%;
 }
 .paragraph1 {
-  color:green;
-  padding-left:20cm;}
-.paragraph2 {
-  color:green;
-  padding-left:20cm;
+  color: green;
+  padding-left: 20cm;
 }
-.paragraph3
-{
-  color:green;
-  padding-left:20cm;
-}
-.paragraph4
-{
-  color:green;
-  padding-left:20cm;
-}
-h4{
+h4 {
   color: Brown;
   font-size: 40pt;
   font-weight: 700;
   padding-left: 280px;
-  margin-top: 0px;}
+  margin-top: 0px;
+}
 
 .row {
   display: flex;
@@ -46,35 +43,20 @@ h4{
 .column {
   flex: 50%;
 }
-h5{
+h5 {
   color: Black;
   font-size: 60pt;
   padding-left: 90px;
   margin-top: 35px;
-  
 }
-.paragraph6{
-  color:purple;
-  font-size:40px;
-  padding-left:30px
+.paragraph2 {
+  color: purple;
+  font-size: 40px;
+  padding-left: 30px;
 }
-.paragraph7{
-  color:purple;
-  font-size:40px;
-  padding-left:30px
-}
-.paragraph8{
-  color:purple;
-  font-size:40px;
-  padding-left:30px
-}
-.paragraph9{
-  color:purple;
-  font-size:40px;
-  padding-left:30px
-}
-.paragraph10 {
-  color:purple;
-  font-size:40px;
-  padding-left:30px
+
+.barchart_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }

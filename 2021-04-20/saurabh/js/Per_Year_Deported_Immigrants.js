@@ -1,6 +1,6 @@
 function Per_Year_Deported_Immigrants() {
   // set the dimensions and margins of the graph
-  var margin = {top: 10, right: 30, bottom: 30, left: 30},
+  var margin = {top: 10, right: 30, bottom: 30, left: 100},
     width = 980 - margin.left - margin.right,
     height = 530 - margin.top - margin.bottom;
 
@@ -27,7 +27,6 @@ function Per_Year_Deported_Immigrants() {
     svg
       .append('g')
       .attr('class', 'x_axis')
-      // .style('fill', 'cornflowerblue')
       .attr('transform', 'translate(0,' + height + ')')
       .call(
         d3
@@ -39,10 +38,7 @@ function Per_Year_Deported_Immigrants() {
       );
 
     // Add Y axis
-    var y = d3
-      .scaleLinear()
-      .domain([0,400])
-      .range([height, 0]);
+    var y = d3.scaleLinear().domain([0, 400]).range([height, 0]);
     svg
       .append('g')
       .attr('class', 'y_axis')
@@ -54,6 +50,14 @@ function Per_Year_Deported_Immigrants() {
             return +d;
           })
       );
+
+    svg
+      .append('text')
+      .attr('y', -margin.left + 20)
+      .attr('x', margin.top)
+      .style('transform', 'rotate(-90)')
+      .attr('text-anchor', 'end')
+      .text('Test!');
 
     // Add the line
     svg
@@ -100,49 +104,42 @@ function Per_Year_Deported_Immigrants() {
       .attr('x', x(1986))
       .attr('y', y(35))
       .text('IRCA')
-      .attr('text-anchor', 'middle')
-      .attr('font-size', '9pt')
-      .attr('font-weight', 'bold')
+      .attr('class', 'immigration_law_label');
+
     svg
       .append('text')
       .attr('x', x(1988))
       .attr('y', y(12))
       .text('Anti-Drug Abuse Act')
-      .attr('text-anchor', 'middle')
-      .attr('font-size', '9pt')
-      .attr('font-weight', 'bold')
+      .attr('class', 'immigration_law_label');
+
     svg
       .append('text')
       .attr('x', x(1990))
       .attr('y', y(60))
       .text('Immigration Act')
-      .attr('text-anchor', 'middle')
-      .attr('font-size', '9pt')
-      .attr('font-weight', 'bold')
+      .attr('class', 'immigration_law_label');
+
     svg
       .append('text')
       .attr('x', x(1990))
       .attr('y', y(60))
       .text('Immigration Act')
-      .attr('text-anchor', 'middle')
-      .attr('font-size', '9pt')
-      .attr('font-weight', 'bold')
+      .attr('class', 'immigration_law_label');
+
     svg
       .append('text')
       .attr('x', x(1997))
       .attr('y', y(55))
       .text('AEDPA')
-      .attr('text-anchor', 'middle')
-      .attr('font-size', '9pt')
-      .attr('font-weight', 'bold')
+      .attr('class', 'immigration_law_label');
+
     svg
       .append('text')
       .attr('x', x(1997))
       .attr('y', y(70))
       .text('IRAIRA')
-      .attr('text-anchor', 'middle')
-      .attr('font-size', '9pt')
-      .attr('font-weight', 'bold')
+      .attr('class', 'immigration_law_label');
   });
 }
 
