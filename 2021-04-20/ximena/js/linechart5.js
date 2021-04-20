@@ -5,13 +5,13 @@ var margin = {top: 10, right: 100, bottom: 30, left: 50},
 
 // append the svg object to the body of the page
 //find the div on the page and add svg element to it. Do some math to set the width and height. Also add grouping element inside. and move that grouping element a little to the right and down.
-  var svg = d3
-    .select('#my_dataviz5')
-    .append('svg')
-    .attr('width', width + margin.left + margin.right)
-    .attr('height', height + margin.top + margin.bottom)
-    .append('g')
-    .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+var svg = d3
+  .select('#my_dataviz5')
+  .append('svg')
+  .attr('width', width + margin.left + margin.right)
+  .attr('height', height + margin.top + margin.bottom)
+  .append('g')
+  .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
 //Read the data
 d3.csv('./data/data5.csv', function (data) {
@@ -35,10 +35,7 @@ d3.csv('./data/data5.csv', function (data) {
   var myColor = d3.scaleOrdinal().domain(allGroup).range(d3.schemeSet2);
 
   // Add X axis --> it is a date format
-  var x = d3
-  .scaleLinear()
-  .domain([1970, 2010])
-  .range([0, width]);
+  var x = d3.scaleLinear().domain([1970, 2010]).range([20, width]).nice();
 
   svg
     .append('g')
@@ -47,47 +44,40 @@ d3.csv('./data/data5.csv', function (data) {
     .call(d3.axisBottom(x).tickFormat(d3.format('.0f')));
 
   // Add Y axis
-  var y = d3
-  .scaleLinear()
-  .domain([30, 80])
-  .range([height, 0]);
+  var y = d3.scaleLinear().domain([30, 80]).range([height, 0]);
 
   svg
-  .append('g')
-  .attr('class', 'y_axis')
-  .call(d3
-    .axisLeft(y)
-    .ticks(6)
-    .tickSize(-width)
-    );
+    .append('g')
+    .attr('class', 'y_axis')
+    .call(d3.axisLeft(y).ticks(6).tickSize(-width));
 
   // this removes the line
   d3.selectAll('.y_axis').select('.domain').remove();
   d3.selectAll('.x_axis').select('.domain').remove();
 
   // Add the lines
-    var line = d3
-      .line()
-      .x(function (d) {
-        return x(+d.time);
-      })
-      .y(function (d) {
-        return y(+d.value);
-      });
+  var line = d3
+    .line()
+    .x(function (d) {
+      return x(+d.time);
+    })
+    .y(function (d) {
+      return y(+d.value);
+    });
 
-    svg
-      .selectAll('myLines')
-      .data(dataReady)
-      .enter()
-      .append('path')
-      .attr('d', function (d) {
-        return line(d.values);
-      })
-      .attr('stroke', function (d) {
-        return myColor(d.name);
-      })
-      .style('stroke-width', 3)
-      .style('fill', 'none');
+  svg
+    .selectAll('myLines')
+    .data(dataReady)
+    .enter()
+    .append('path')
+    .attr('d', function (d) {
+      return line(d.values);
+    })
+    .attr('stroke', function (d) {
+      return myColor(d.name);
+    })
+    .style('stroke-width', 3)
+    .style('fill', 'none');
 
   // Add the points
   svg
@@ -138,4 +128,3 @@ d3.csv('./data/data5.csv', function (data) {
     })
     .style('font-size', 15);
 });
-

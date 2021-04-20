@@ -1,7 +1,7 @@
 function linechart(location, url) {
   // set the dimensions and margins of the graph
-  var margin = {top: 10, right: 100, bottom: 30, left: 30},
-    width = 600 - margin.left - margin.right,
+  var margin = {top: 10, right: 20, bottom: 30, left: 30},
+    width = 800 - margin.left - margin.right,
     height = 400 - margin.top - margin.bottom;
 
   // append the svg object to the body of the page
@@ -11,6 +11,9 @@ function linechart(location, url) {
     .append('svg')
     .attr('width', width + margin.left + margin.right)
     .attr('height', height + margin.top + margin.bottom)
+    // this centers a chart using javascript.
+    .style('margin', '0 auto')
+    .style('display', 'block')
     .append('g')
     .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
@@ -56,6 +59,12 @@ function linechart(location, url) {
     // this removes the line
     d3.selectAll('.y_axis').select('.domain').remove();
     d3.selectAll('.x_axis').select('.domain').remove();
+
+    // this moves the text on the x-axis down a little more. Play with the 15px to see how it changes.
+    d3.selectAll('.x_axis').selectAll('text').attr('dy', '15px');
+
+    // this moves the text on the y-axis to the left of. Play with the -5px to see how it changes.
+    d3.selectAll('.y_axis').selectAll('text').attr('dx', '-5px');
 
     // Add the lines
     var line = d3
@@ -108,28 +117,28 @@ function linechart(location, url) {
       .attr('stroke', 'white');
 
     // Add a legend at the end of each line
-    svg
-      .selectAll('myLabels')
-      .data(dataReady)
-      .enter()
-      .append('g')
-      .append('text')
-      .datum(function (d) {
-        return {name: d.name, value: d.values[d.values.length - 1]};
-      }) // keep only the last value of each time series
-      .attr('transform', function (d) {
-        return 'translate(' + x(d.value.time) + ',' + y(d.value.value) + ')';
-      }) // Put the text at the position of the last point
-      .attr('x', 12) 
-      
-      // shift the text a bit more right
-      .text(function (d) {
-        return d.name;
-      })
-      .style('fill', function (d) {
-        return myColor(d.name);
-      })
-      .style('font-size', 15);
+    // svg
+    //   .selectAll('myLabels')
+    //   .data(dataReady)
+    //   .enter()
+    //   .append('g')
+    //   .append('text')
+    //   .datum(function (d) {
+    //     return {name: d.name, value: d.values[d.values.length - 1]};
+    //   }) // keep only the last value of each time series
+    //   .attr('transform', function (d) {
+    //     return 'translate(' + x(d.value.time) + ',' + y(d.value.value) + ')';
+    //   }) // Put the text at the position of the last point
+    //   .attr('x', 12)
+
+    //   // shift the text a bit more right
+    //   .text(function (d) {
+    //     return d.name;
+    //   })
+    //   .style('fill', function (d) {
+    //     return myColor(d.name);
+    //   })
+    //   .style('font-size', 15);
   });
 
   // years should show as years without commas
