@@ -14,7 +14,7 @@ TODO
 - Make the layout more dynamic on large screens too(better for mobile right now, everything is in a single column)
   LMD: Here I would mainly focus on getting your charts to be centered on the page.
 - Data callout for a specific data point on the scatterplot
-  LMD: Check out this specific link https://www.d3-graph-gallery.com/graph/scatter_tooltip.html
+  LMD: Check out this specific tutorial https://www.d3-graph-gallery.com/graph/scatter_tooltip.html
 - Labels on top of the bar charts
 - Turn the stacked bar chart horizontal (or at least try to see how it looks)
   LMD: Making your bar charts horizontal would totally help with labels being so long.
