@@ -1,0 +1,6 @@
+4/27/2020
+
+1. Maps:
+Fix space between paragraph text and map. 
+
+2. General questions - where should we add the data sources? At the bottom of the page, next to each chart? 
