@@ -1,0 +1,56 @@
+body {
+  font-family: MS UI Gothic;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+header {
+  color: white;
+  background-color: #67b05c;
+  height: 400px;
+}
+
+h1 {
+  font-size: 100px;
+  line-height: 0px;
+}
+
+h2 {
+  color: #266a3e;
+  font-size: 30px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 23px;
+  padding: 0 10px;
+}
+
+p.author {
+  text-align: right;
+  padding-right: 20px;
+}
+
+p.references {
+  color: #939598;
+  font-size: 14px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.column1 {
+  column-width: 480px;
+}
+
+.column2 {
+  column-width: 850px;
+  margin-left: 30px;
+}
+
+.column3 {
+  column-width: 660px;
+  margin-left: 30px;
+}

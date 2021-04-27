@@ -1,6 +1,6 @@
 function Per_Year_Deported_Immigrants() {
   // set the dimensions and margins of the graph
-  var margin = {top: 20, right: 30, bottom: 30, left: 30},
+  var margin = {top: 20, right: 30, bottom: 30, left: 33},
     width = 1200 - margin.left - margin.right,
     height = 450 - margin.top - margin.bottom;
 
@@ -25,7 +25,7 @@ function Per_Year_Deported_Immigrants() {
       )
       .range([0, width]);
 
-      svg
+    svg
       .append('g')
       .attr('class', 'x_axis')
       .attr('transform', 'translate(0,' + height + ')')
@@ -33,14 +33,13 @@ function Per_Year_Deported_Immigrants() {
 
     // Add Y axis
     var y = d3.scaleLinear().domain([0, 400]).range([height, 0]);
-    
+
     svg
       .append('g')
       .attr('class', 'y_axis')
       .call(d3.axisLeft(y).ticks(11).tickSize(-width));
 
-
-    // this removes the line
+    // this removes the default lines on the x & y axes
     d3.selectAll('.y_axis').select('.domain').remove();
     d3.selectAll('.x_axis').select('.domain').remove();
 
@@ -89,7 +88,6 @@ function Per_Year_Deported_Immigrants() {
         return y(d.Removals);
       })
       .attr('r', 5);
-
 
     svg
       .append('text')

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wealth and Prison</title>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="row">
+        <div>
+          <img
+            src="http://mediaocu.com/wp-content/uploads/2016/03/money-gavel-.png"
+            alt="th"
+            width="480"
+            height="400"
+          />
+        </div>
+        <div>
+          <h1>Wealth and Prison</h1>
+          <p class="author">Rafael de la Zerda</p>
+          <p>
+            When you’re jailed, money can make all the difference. In the United
+            States, income has a significant impact on the experience of
+            incarceration at every stage, interplaying with race and gender. The
+            county’s infamously large prison population is largely due to its
+            excessive bail, which restricts the principle of innocent until
+            proven guilty to the wealthy. Moreover, those in lower income
+            brackets are more likely to be jailed to begin with, and most of
+            those unable to meet bail fall within the poorest third of society.
+            A greater percentage of men than women unable to make bail are
+            moderately wealthy, while women unable to make bail are evenly
+            distributed across all economic brackets. The likelihood of
+            incarceration is higher for blacks than for whites and Hispanics at
+            every level of wealth. Racial wealth gaps have been observed among
+            the future-incarcerated and the previously-incarcerated. The rate of
+            unemployment is higher for those released from prison than for the
+            general population. The rates are highest for black women and lowest
+            for white men.
+          </p>
+        </div>
+      </div>
+    </header>
+    <div>
+      <div class="column2">
+        <h2>Prison Income Distributions by Gender</h2>
+        <div id="linechart"></div>
+        <p>
+          Monthly income categories for jailed individuals ages 23-39 prior to
+          incarceration, for the incarcerated unable to meet bail, and for the
+          non-incarcerated. Amounts are expressed in 2002 dollars. Men unable to
+          make bail skewed toward higher salaries, likely due to higher overall
+          income; women unable to make bail were more evenly distributed across
+          categories. Though most jailed individuals make less than the
+          non-incarcerated in their income bracket, there is a notable
+          exception: more women making $0 were never incarcerated than those who
+          were. One explanation is that many non-incarcerated women relied on
+          their spouses.
+        </p>
+      </div>
+      <div class="column2">
+        <h2>
+          Income of Incarcerated<br />(Pre-Incarceration) and<br />Never
+          Incarcerated
+        </h2>
+        <div class="row">
+          <p>
+            Median annual incomes, prior to incarceration, for those aged 23-39
+            unable to meet bail in local jails, expressed in 2015 dollars. The
+            median bail bond is nearly equivalent to a full year’s income for
+            those unable to meet bail, on a national level. The median
+            pre-incarceration income was $15,109, less than half the median for
+            those not in jail of similar ages.
+          </p>
+          <div id="barchart1"></div>
+        </div>
+
+        <div id="piechart"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column3">
+        <h2>Unemployment Rates after Release</h2>
+        <div id="barchart_stacked"></div>
+        <p>
+          Unemployment rates of the formerly incarcerated compared to the
+          general population, both ages 35-44. Results are broken down by age
+          and gender. Rates were highest among blacks between both genders, in
+          women between both races, and in the fomerly incarcer- ated across all
+          categories.
+        </p>
+      </div>
+      <div class="column3">
+        <h2>Wealth Distribution of Previously<br />and Never Incarcerated</h2>
+        <div id="barchart2"></div>
+        <p>
+          Annual income distribution of the previously and never incarcerated
+          across the 4 quartiles of wealth, broken down by race. Data are from
+          the National Longitudinal Survey of Youth, recorded across three
+          nonconsecutive years. Greater wealth observed lower incarceration
+          rates. At every economic level, each race had higher incomes if they
+          had never been incarcerated. Whites had the greatest wealth in every
+          category, blacks generally the least.
+        </p>
+        <p class="references">
+          Detaining the Poor: How money bail perpetuates an endless cycle of
+          poverty and jail time (2016), Prison Policy Initiative Out of Prison &
+          Out of Work: Unemployment among formerly incarcerated people, Prison
+          Policy Initiative Zaw et al. Race, Wealth and Incarceration: Results
+          from the National Longitudinal Survey of Youth (2016) Race
+        </p>
+      </div>
+    </div>
+
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="./js/linechart.js"></script>
+    <script src="./js/barchart_stacked.js"></script>
+    <script src="./js/barchart1.js"></script>
+    <script src="./js/piechart.js"></script>
+    <script src="./js/barchart2.js"></script>
+  </body>
+</html>

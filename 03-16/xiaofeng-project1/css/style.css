@@ -1,0 +1,48 @@
+/* 我需要居中，两边有距离,我想加好看的分割线 
+google font 里的不同文字怎么用？*/
+
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+.placeholder {
+  background-color: lavender;
+  height: 400px;
+}
+
+body {
+  font-family: 'Newsreader', serif;
+  font-weight: 300;
+  line-height: 1.5;
+  text-align: center;
+  padding: 1em 10em 10em;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.2;
+}
+
+h2 {
+  color: #cb5b67;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1;
+}
+
+h5 {
+  color: #6d6e71;
+  font-style: italic;
+  font-weight: 400;
+  text-align: right;
+}
+
+p {
+  text-align: justify;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 500;
+}

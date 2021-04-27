@@ -1,0 +1,13 @@
+
+To Do's
+
+-Top header readjust again
+-create 2-column grid or an aside for top image and text
+
+Heatmap:
+-legend: fix null svg: added a gray stroke but it's not evenly rounded, the corners are thicker and flat; used css "stroke-linejoin: round;" didn't make a difference) 
+-stack and column center titles at the top (found this but having trouble integrating: https://bl.ocks.org/mbostock/7555321) (couldn't figure out how to add dx dy to only one title-they are a group)
+-Maybe add long tic mark across the y axis
+
+Pie chart:
+-the main percentages when below 50% are to the left of the chart, but I would like all pink percentages to the right like the first three pie charts

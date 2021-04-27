@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  background-color: #ffe0b3;
+  font-family: 'Inter', sans-serif;
+  font-size: 20pt;
+  padding: 20px 80px 20px 80px;
+  max-width: 1400px;
+  color: black;
+  font-size: 9.5pt;
+  font-weight: 400;
+  margin: 0 auto;
+}
+
+/*Main Header*/
+#header1 {
+  color: black;
+  font-size: 24pt;
+  font-weight: 700;
+  text-align: center;
+}
+
+h2 {
+  font-size: 24pt;
+  font-weight: 500;
+}
+/*First Para Heading*/
+#header2 {
+  color: #333399;
+}
+/*Second Para Heading*/
+#header3 {
+  color: #993333;
+}
+/*Third Para Heading*/
+#header4 {
+  color: #ff3333;
+}
+/*First Para Sub-Heading*/
+.FPSubHdng {
+  color: #333399;
+  font-size: 9pt;
+  font-weight: bold;
+  text-align: center;
+}
+
+/*by-line and reference*/
+#byline {
+  color: black;
+  font-size: 6pt;
+  font-weight: 400;
+
+  /* This gets both reference and by-line on the same horizontal line and at opposite corners of the page */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.HLine1 {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #333399;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.HLine2 {
+  display: block;
+  height: 2px;
+  border: 0;
+  border-top: 2px solid black;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.immigration_law_label {
+  text-anchor: middle;
+  font-size: 9pt;
+  font-weight: bold;
+  fill: blue;
+}
+
+/* Grids for page below */
+
+/*First para space assignment*/
+/* This is the CSS for a grid container */
+.Grid_Container1 {
+  /* this creates a grid   */
+  display: grid;
+  /* this creates columns   */
+  /*grid-template-columns: 1fr 1fr;*/
+  grid-template-columns: 1000px auto;
+  /* this creates rows   */
+  /*grid-template-rows: 1fr 1fr 1fr;%/
+  /*  this adds a gap in between columns  */
+  column-gap: 35px;
+  /* this adds a gap between rows   */
+  /*row-gap: 15px;*/
+}
+
+/*Second para space assignment*/
+/* This is the CSS for a grid container */
+.Grid_Container2 {
+  /* this creates a grid   */
+  display: grid;
+  /* this creates columns   */
+  grid-template-columns: 1fr 1fr 1fr;
+  /* this creates rows   */
+  /*grid-template-rows: 1fr 1fr 1fr;%/
+  /*  this adds a gap in between columns  */
+  column-gap: 35px;
+  /* this adds a gap between rows   */
+  /*row-gap: 15px;*/
+}
+
+/*Third para space assignment*/
+/* This is the CSS for a grid container */
+.Grid_Container3 {
+  /* this creates a grid   */
+  display: grid;
+  /* this creates columns   */
+  /*grid-template-columns: 1fr 1fr;*/
+  grid-template-columns: 400px 1600px;
+  /* this creates rows   */
+  /*grid-template-rows: 1fr 1fr 1fr;%/
+  /*  this adds a gap in between columns  */
+  column-gap: 35px;
+  /* this adds a gap between rows   */
+  /*row-gap: 15px;*/
+}
+
+.Grid_Container4 {
+  /* this creates a grid   */
+  display: grid;
+  /* this creates columns   */
+  /*grid-template-columns: 1fr 1fr;*/
+  grid-template-columns: 350px 675px auto;
+  /* this creates rows   */
+  /*grid-template-rows: 1fr 1fr 1fr;%/
+  /*  this adds a gap in between columns  */
+  column-gap: 35px;
+  /* this adds a gap between rows   */
+  /*row-gap: 15px;*/
+}

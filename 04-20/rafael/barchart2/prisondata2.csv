@@ -1,0 +1,19 @@
+Race,25th,50th,75th,90th,Year,Status
+Black,0,0,2758,6177,1985,Previously Incarcerated
+Hispanic,0,1576,6876,28372,1985,Previously Incarcerated
+White,0,1491,6390,14277,1985,Previously Incarcerated
+Black,,1278,7668,22052,1985,Never Incarcerated
+Hispanic,,4260,15,549,22052,1985,Never Incarcerated
+White,2130,10224,32823,81579,1985,Never Incarcerated
+Black,,3,9443,46218,2000,Previously Incarcerated
+Hispanic,1064,8512,29792,168910,2000,Previously Incarcerated
+White,,8645,65170,249774,2000,Previously Incarcerated
+Black,665,15428,70490,160132,2000,Never Incarcerated
+Hispanic,5365,42,826,127680,320530,2000,Never Incarcerated
+White,36110,126217,304570,627760,2000,Never Incarcerated
+Black,,,18500,97800,2012,Previously Incarcerated
+Hispanic,,1400,43800,43,000,2012,Previously Incarcerated
+White,-563,5000,50000,124337,2012,Previously Incarcerated
+Black,,16,200,107400,258295,2012,Never Incarcerated
+Hispanic,1825,53,000,205700,540000,2012,Never Incarcerated
+White,41000,192300,480000,1006500,2012,Never Incarcerated

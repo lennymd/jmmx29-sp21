@@ -1,0 +1,172 @@
+Sub-group,Yoga Pose,yes-no color value
+Relieves Anxiety,Seated Forward Bend,1
+Relieves Anxiety,Big Toe Pose,1
+Relieves Anxiety,Standing Forward Bend,1
+Relieves Anxiety,Corpse Pose,0
+Relieves Anxiety,Supported Headstand,0
+Relieves Anxiety,Supported Shoulderstand,0
+Relieves Anxiety,Bridge Pose,1
+Relieves Anxiety,Dolphin Plank Pose,0
+Relieves Anxiety,Easy Pose,1
+Relieves Anxiety,Legs-Up-the-Wall Pose,1
+Relieves Anxiety,Head-to-Knee Forward Bend,1
+Relieves Anxiety,Dolphin Pose,0
+Relieves Anxiety,Bound Angle Pose,1
+Relieves Anxiety,Wide-Legged Forward Bend,0
+Relieves Anxiety,Child's Pose,0
+Relieves Anxiety,Double Pigeon Pose,0
+Relieves Anxiety,Happy Baby Pose,0
+Relieves Anxiety,Downward-Facing Dog,0
+Relieves Anxiety,Plow Pose,0
+Calms the Mind,Seated Forward Bend,1
+Calms the Mind,Big Toe Pose,1
+Calms the Mind,Standing Forward Bend,1
+Calms the Mind,Corpse Pose,1
+Calms the Mind,Supported Headstand,1
+Calms the Mind,Supported Shoulderstand,1
+Calms the Mind,Bridge Pose,1
+Calms the Mind,Dolphin Plank Pose,1
+Calms the Mind,Easy Pose,1
+Calms the Mind,Legs-Up-the-Wall Pose,1
+Calms the Mind,Head-to-Knee Forward Bend,1
+Calms the Mind,Dolphin Pose,1
+Calms the Mind,Bound Angle Pose,0
+Calms the Mind,Wide-Legged Forward Bend,1
+Calms the Mind,Child's Pose,1
+Calms the Mind,Double Pigeon Pose,0
+Calms the Mind,Happy Baby Pose,1
+Calms the Mind,Downward-Facing Dog,1
+Calms the Mind,Plow Pose,1
+Eases Depression,Seated Forward Bend,1
+Eases Depression,Big Toe Pose,1
+Eases Depression,Standing Forward Bend,1
+Eases Depression,Corpse Pose,1
+Eases Depression,Supported Headstand,1
+Eases Depression,Supported Shoulderstand,1
+Eases Depression,Bridge Pose,1
+Eases Depression,Dolphin Plank Pose,1
+Eases Depression,Easy Pose,1
+Eases Depression,Legs-Up-the-Wall Pose,1
+Eases Depression,Head-to-Knee Forward Bend,0
+Eases Depression,Dolphin Pose,1
+Eases Depression,Bound Angle Pose,1
+Eases Depression,Wide-Legged Forward Bend,1
+Eases Depression,Child's Pose,0
+Eases Depression,Double Pigeon Pose,1
+Eases Depression,Happy Baby Pose,0
+Eases Depression,Downward-Facing Dog,1
+Eases Depression,Plow Pose,0
+Relieves Stress,Seated Forward Bend,1
+Relieves Stress,Big Toe Pose,1
+Relieves Stress,Standing Forward Bend,1
+Relieves Stress,Corpse Pose,1
+Relieves Stress,Supported Headstand,1
+Relieves Stress,Supported Shoulderstand,1
+Relieves Stress,Bridge Pose,0
+Relieves Stress,Dolphin Plank Pose,1
+Relieves Stress,Easy Pose,0
+Relieves Stress,Legs-Up-the-Wall Pose,0
+Relieves Stress,Head-to-Knee Forward Bend,0
+Relieves Stress,Dolphin Pose,0
+Relieves Stress,Bound Angle Pose,0
+Relieves Stress,Wide-Legged Forward Bend,0
+Relieves Stress,Child's Pose,1
+Relieves Stress,Double Pigeon Pose,1
+Relieves Stress,Happy Baby Pose,1
+Relieves Stress,Downward-Facing Dog,0
+Relieves Stress,Plow Pose,0
+Energizes,Seated Forward Bend,2
+Energizes,Big Toe Pose,2
+Energizes,Standing Forward Bend,2
+Energizes,Corpse Pose,2
+Energizes,Supported Headstand,2
+Energizes,Supported Shoulderstand,2
+Energizes,Bridge Pose,0
+Energizes,Dolphin Plank Pose,0
+Energizes,Easy Pose,0
+Energizes,Legs-Up-the-Wall Pose,0
+Energizes,Head-to-Knee Forward Bend,2
+Energizes,Dolphin Pose,2
+Energizes,Bound Angle Pose,2
+Energizes,Wide-Legged Forward Bend,2
+Energizes,Child's Pose,2
+Energizes,Double Pigeon Pose,2
+Energizes,Happy Baby Pose,2
+Energizes,Downward-Facing Dog,2
+Energizes,Plow Pose,2
+Alleviates Insomnia,Seated Forward Bend,3
+Alleviates Insomnia,Big Toe Pose,3
+Alleviates Insomnia,Standing Forward Bend,3
+Alleviates Insomnia,Corpse Pose,3
+Alleviates Insomnia,Supported Headstand,3
+Alleviates Insomnia,Supported Shoulderstand,0
+Alleviates Insomnia,Bridge Pose,3
+Alleviates Insomnia,Dolphin Plank Pose,0
+Alleviates Insomnia,Easy Pose,0
+Alleviates Insomnia,Legs-Up-the-Wall Pose,3
+Alleviates Insomnia,Head-to-Knee Forward Bend,3
+Alleviates Insomnia,Dolphin Pose,3
+Alleviates Insomnia,Bound Angle Pose,0
+Alleviates Insomnia,Wide-Legged Forward Bend,0
+Alleviates Insomnia,Child's Pose,0
+Alleviates Insomnia,Double Pigeon Pose,3
+Alleviates Insomnia,Happy Baby Pose,0
+Alleviates Insomnia,Downward-Facing Dog,3
+Alleviates Insomnia,Plow Pose,3
+Soothes Headaches,Seated Forward Bend,3
+Soothes Headaches,Big Toe Pose,3
+Soothes Headaches,Standing Forward Bend,0
+Soothes Headaches,Corpse Pose,3
+Soothes Headaches,Supported Headstand,0
+Soothes Headaches,Supported Shoulderstand,0
+Soothes Headaches,Bridge Pose,3
+Soothes Headaches,Dolphin Plank Pose,0
+Soothes Headaches,Easy Pose,0
+Soothes Headaches,Legs-Up-the-Wall Pose,3
+Soothes Headaches,Head-to-Knee Forward Bend,3
+Soothes Headaches,Dolphin Pose,3
+Soothes Headaches,Bound Angle Pose,0
+Soothes Headaches,Wide-Legged Forward Bend,3
+Soothes Headaches,Child's Pose,0
+Soothes Headaches,Double Pigeon Pose,3
+Soothes Headaches,Happy Baby Pose,0
+Soothes Headaches,Downward-Facing Dog,3
+Soothes Headaches,Plow Pose,3
+Relieves High BP,Seated Forward Bend,3
+Relieves High BP,Big Toe Pose,0
+Relieves High BP,Standing Forward Bend,3
+Relieves High BP,Corpse Pose,3
+Relieves High BP,Supported Headstand,0
+Relieves High BP,Supported Shoulderstand,0
+Relieves High BP,Bridge Pose,3
+Relieves High BP,Dolphin Plank Pose,3
+Relieves High BP,Easy Pose,0
+Relieves High BP,Legs-Up-the-Wall Pose,3
+Relieves High BP,Head-to-Knee Forward Bend,3
+Relieves High BP,Dolphin Pose,0
+Relieves High BP,Bound Angle Pose,3
+Relieves High BP,Wide-Legged Forward Bend,0
+Relieves High BP,Child's Pose,0
+Relieves High BP,Double Pigeon Pose,0
+Relieves High BP,Happy Baby Pose,0
+Relieves High BP,Downward-Facing Dog,3
+Relieves High BP,Plow Pose,0
+Improves Digestion,Seated Forward Bend,3
+Improves Digestion,Big Toe Pose,3
+Improves Digestion,Standing Forward Bend,3
+Improves Digestion,Corpse Pose,0
+Improves Digestion,Supported Headstand,3
+Improves Digestion,Supported Shoulderstand,3
+Improves Digestion,Bridge Pose,3
+Improves Digestion,Dolphin Plank Pose,0
+Improves Digestion,Easy Pose,0
+Improves Digestion,Legs-Up-the-Wall Pose,3
+Improves Digestion,Head-to-Knee Forward Bend,3
+Improves Digestion,Dolphin Pose,3
+Improves Digestion,Bound Angle Pose,0
+Improves Digestion,Wide-Legged Forward Bend,0
+Improves Digestion,Child's Pose,0
+Improves Digestion,Double Pigeon Pose,0
+Improves Digestion,Happy Baby Pose,0
+Improves Digestion,Downward-Facing Dog,3
+Improves Digestion,Plow Pose,0

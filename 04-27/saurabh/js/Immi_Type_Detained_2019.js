@@ -22,6 +22,11 @@ function Immi_Type_Detained_2019() {
     'Family Units': 473682,
     'Unaccompanied Alien Child': 76020,
   };
+  // var data = {
+  //   'Single Adults': '301,806',
+  //   'Family Units': '473,682',
+  //   'Unaccompanied Alien Child': '76,020',
+  // };
 
   // set the color scale
   var color = d3
@@ -34,10 +39,9 @@ function Immi_Type_Detained_2019() {
     return d.value;
   });
   var data_ready = pie(d3.entries(data));
-
   // shape helper to build arcs:
   var arcGenerator = d3.arc().innerRadius(0).outerRadius(radius);
-  
+
   // Build the pie chart: Basically, each part of the pie is a path that we build using the arc function.
   svg
     .selectAll('pie_slice')
@@ -59,15 +63,13 @@ function Immi_Type_Detained_2019() {
     .enter()
     .append('text')
     .html(function (d) {
-      return d.data.value;
+      return d3.format(',.5r')(d.data.value);
     })
     .attr('transform', function (d) {
       return 'translate(' + arcGenerator.centroid(d) + ')';
     })
     .style('text-anchor', 'middle')
     .style('font-size', 16);
-
-   
 }
 
 Immi_Type_Detained_2019();

@@ -8,7 +8,7 @@ body {
 }
 
 .placeholder {
-  height: auto,auto;
+  height: auto, auto;
 }
 
 .placeholder3 {
@@ -23,7 +23,6 @@ body {
   /* background-color: cornflowerblue; */
   height: auto;
 }
-
 
 .grid_container1 {
   display: grid;
@@ -105,7 +104,7 @@ body {
   align-self: center;
   grid-column-start: 2;
   grid-column-end: 3;
-  height: 100px
+  height: 100px;
   /* padding-inline-start: 10px;
   padding-inline-end: 10px; */
 }
@@ -159,7 +158,8 @@ table {
   width: 100%;
 }
 
-td, th {
+td,
+th {
   border: 1px solid #dddddd;
   border-left: none;
   border-right: none;
@@ -172,7 +172,7 @@ td, th {
 }
 .barchart_y_axis g.tick line {
   stroke: none;
-} 
+}
 .barchart1_bar_text {
   font-size: 14px;
 }
@@ -189,7 +189,7 @@ td, th {
   stroke: none;
 }
 .stackedbar_bar_text {
-  font-weight:400;
+  font-weight: 400;
 }
 .barchart2_bar_text {
   font-size: 14px;
@@ -206,7 +206,7 @@ td, th {
   display: none;
 }
 .y_axis g.tick text {
-font-size: 12px;
+  font-size: 12px;
 }
 .y_axis g.tick line {
   stroke: #d2d3d4;
@@ -216,7 +216,7 @@ font-size: 12px;
   stroke: #d2d3d4;
   stroke-dasharray: 1px 3px;
 }
-.x_axis g.tick text{
+.x_axis g.tick text {
   font-size: 12px;
 }
 .linechart1_title_text {
@@ -301,24 +301,32 @@ font-size: 12px;
 }
 
 .legend {
-	font-size: 14px;
+  font-size: 14px;
   font-family: 'Proxima Nova', sans-serif;
 }
 
 .legend_title {
-	font-size: 14px;
+  font-size: 14px;
   font-family: 'Proxima Nova', sans-serif;
-	font-weight: bold;
+  font-weight: bold;
 }
-div.tooltip {	
-    position: absolute;			
-    text-align: center;			
-    width: 100px;					
-    height: auto;					
-    padding: 2px;				
-    font: 12px sans-serif;		
-    background: #fff;	
-    border: 1px solid #969696;		
-    border-radius: 8px;			
-    pointer-events: none;			
+div.tooltip {
+  position: absolute;
+  text-align: center;
+  width: 100px;
+  height: auto;
+  padding: 2px;
+  font: 12px sans-serif;
+  background: #fff;
+  border: 1px solid #969696;
+  border-radius: 8px;
+  pointer-events: none;
+}
+
+#pretrial_map {
+  margin-top: -70px;
+}
+
+#poverty_map {
+  margin-top: -70px;
 }

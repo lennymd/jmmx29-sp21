@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<head>
+  <title>Income Scatterplot</title>
+  <meta charset="utf-8" />
+  <style></style>
+</head>
+
+<body>
+  <!-- Load d3.js -->
+  <script src="https://d3js.org/d3.v4.js"></script>
+
+  <!-- Create a div where the graph will take place -->
+  <div id="my_dataviz"></div>
+  <script>
+    // set the dimensions and margins of the graph
+    var margin = {top: 10, right: 30, bottom: 30, left: 60},
+      width = 800 - margin.left - margin.right,
+      height = 600 - margin.top - margin.bottom;
+
+    // append the svg object to the body of the page
+    var svg = d3
+      .select('#my_dataviz')
+      .append('svg')
+      .attr('width', width + margin.left + margin.right)
+      .attr('height', height + margin.top + margin.bottom)
+      .append('g')
+      .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+
+    svg
+      .append('rect')
+      .attr('x', 0)
+      .attr('y', 0)
+      .attr('width', width)
+      .attr('height', height)
+      .attr('fill', '#f6f0e0');
+    //Read the data
+    d3.csv('./income.csv', function (data) {
+      // Add X axis
+      var x = d3.scaleLinear().domain([0, 80]).range([0, width]);
+      svg
+        .append('g')
+        .attr('transform', 'translate(0,' + height + ')')
+        .call(d3.axisBottom(x));
+
+      // Add Y axis
+      var y = d3.scaleLinear().domain([0, 110]).range([height, 0]).nice();
+      svg.append('g').call(d3.axisLeft(y));
+
+      // Add a tooltip div. Here I define the general feature of the tooltip: stuff that do not depend on the data point.
+      // Its opacity is set to 0: we don't see it by default.
+      var tooltip = d3
+        .select('#my_dataviz')
+        .append('div')
+        .style('opacity', 20)
+        .attr('class', 'tooltip')
+        .style('background-color', 'cornflower blue')
+        // why does this not change the color
+        .style('border', 'none')
+        .style('border-width', '1px')
+        .style('border-radius', '5px')
+        .style('padding', '10px');
+
+      // A function that change this tooltip when the user hover a point.
+      // Its opacity is set to 1: we can now see it. Plus it set the text and position of tooltip depending on the datapoint (d)
+      var mouseover = function (d) {
+        tooltip.style('opacity', 1);
+      };
+
+      var mousemove = function (d) {
+        tooltip
+          .html(
+            d.Ethnicity +
+              '<br> ' +
+              ' Bachelor Degree: ' +
+              d.PercentDegree +
+              '%' +
+              '<br> Average Household Income: ' +
+              d.Income +
+              'k a year'
+          )
+          .style('left', d3.mouse(this)[0] + 90 + 'px') // It is important to put the +90: other wise the tooltip is exactly where the point is an it creates a weird effect
+          .style('top', d3.mouse(this)[1] + 'px');
+      };
+
+      // A function that change this tooltip when the leaves a point: just need to set opacity to 0 again
+      var mouseleave = function (d) {
+        tooltip.transition().duration(200).style('opacity', 0);
+      };
+
+      // Add dots
+
+      const dots = svg.append('g').selectAll('dot').data(data).enter();
+
+      dots
+        .append('circle')
+        .attr('cx', function (d) {
+          return x(d.PercentDegree);
+        })
+        .attr('cy', function (d) {
+          return y(d.Income);
+        })
+        .attr('r', 7)
+        .style('fill', '#69b3a2')
+        .style('opacity', 0.3)
+        .style('stroke', 'white')
+        .on('mouseover', mouseover)
+        .on('mousemove', mousemove)
+        .on('mouseleave', mouseleave);
+
+      dots
+        .append('text')
+        .attr('x', function (d) {
+          return x(d.PercentDegree);
+        })
+        .attr('y', function (d) {
+          return y(d.Income) - 10;
+        })
+        .text(function (d) {
+          return d.Ethnicity + d.PercentDegree + '%, ' + d.Income + 'K';
+        })
+
+
+        .attr('text-anchor', 'middle');
+
+      // svg
+      //   .selectAll('circle')
+      //   .data(dataset)
+      //   .enter()
+      //   .append('circle')
+      //   .attr('cx', function (d) {
+      //     return d[0];
+      //   })
+      //   .attr('cy', function (d) {
+      //     return d[1];
+      //   })
+      //   .attr('r', function (d) {
+      //     return Math.sqrt(h - d[1]);
+      //   });
+
+      // svg
+      //   .selectAll('text')
+      //   .data(dataset)
+      //   .enter()
+      //   .append('text')
+      //   .text(function (d) {
+      //     return d[0] + ',' + d[1];
+      //   })
+      //   .attr('x', function (d) {
+      //     return d[0];
+      //   })
+      //   .attr('y', function (d) {
+      //     return d[1];
+      //   })
+      //   .attr('font-family', 'sans-serif')
+      //   .attr('font-size', '11px')
+      //   .attr('fill', 'red');
+    });
+  </script>
+</body>

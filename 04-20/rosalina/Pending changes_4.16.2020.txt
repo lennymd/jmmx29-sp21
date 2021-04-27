@@ -1,0 +1,11 @@
+4/16/2020
+
+1. Linechart1 and Linechart2: 
+x-axis labels - move down
+2. Stacked bar chart: 
+Fix legend [LMD: Make it bigger? Bring it closer? How do you want to modify?]
+3. Maps:
+fix space between text and map. [LMD: centering them would do wonders
+4. ALL Bar charts:
+LMD: are the ticks necessary?
+5. General: Can we center all the charts?

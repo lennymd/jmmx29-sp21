@@ -1,0 +1,80 @@
+h1{
+  color: Black;
+  font-size: 70pt;
+  font-weight: 700;
+  padding-left: 200px;
+  margin-top: 0px;
+  
+}
+.paragraph0 {
+  font-size:20pt;
+  
+}
+.paragraph {
+  font-size:14pt;
+  color:pink;
+  width: 40%;
+}
+.paragraph1 {
+  color:green;
+  padding-left:20cm;}
+.paragraph2 {
+  color:green;
+  padding-left:20cm;
+}
+.paragraph3
+{
+  color:green;
+  padding-left:20cm;
+}
+.paragraph4
+{
+  color:green;
+  padding-left:20cm;
+}
+h4{
+  color: Brown;
+  font-size: 40pt;
+  font-weight: 700;
+  padding-left: 280px;
+  margin-top: 0px;}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+h5{
+  color: Black;
+  font-size: 60pt;
+  padding-left: 90px;
+  margin-top: 35px;
+  
+}
+.paragraph6{
+  color:purple;
+  font-size:40px;
+  padding-left:30px
+}
+.paragraph7{
+  color:purple;
+  font-size:40px;
+  padding-left:30px
+}
+.paragraph8{
+  color:purple;
+  font-size:40px;
+  padding-left:30px
+}
+.paragraph9{
+  color:purple;
+  font-size:40px;
+  padding-left:30px
+}
+.paragraph10 {
+  color:purple;
+  font-size:40px;
+  padding-left:30px
+}

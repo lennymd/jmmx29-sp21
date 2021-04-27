@@ -32,6 +32,7 @@ function US_Border_Patrol_SW_Border_Arrest() {
     // This following chunk: start from where we left off in the svg variable. Create a group element that we'll use for our xAxis. Move it down by the height of the graphic. Then create the axis using d3. Once it's made, select all the text elements, and rotate and translate them.them.
     svg
       .append('g')
+      .attr('class', 'x_axis')
       .attr('transform', 'translate(0,' + height + ')')
       .call(d3.axisBottom(x))
       .selectAll('text')
@@ -40,9 +41,14 @@ function US_Border_Patrol_SW_Border_Arrest() {
 
     // Add Y axis
     var y = d3.scaleLinear().domain([0, 1000]).range([height, 0]);
-    svg.append('g').call(d3.axisLeft(y));
+    svg
+      .append('g')
+      .attr('class', 'y_axis')
+      .call(d3.axisLeft(y).tickSize(-width));
 
-
+    // this removes the default lines on the x & y axes
+    d3.selectAll('.y_axis').select('.domain').remove();
+    d3.selectAll('.x_axis').select('.domain').remove();
 
     // Bars
     // This code add the bars: Start from svg. Let d3 know you're going to be making things called 'mybar'.

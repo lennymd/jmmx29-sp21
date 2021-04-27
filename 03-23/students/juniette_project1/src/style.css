@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body {
+  background-color: #F4F4F2;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12pt;  
+}
+
+ .container {
+      display: grid;
+      grid-gap: 20px;
+/*       width: 650px; */
+   padding: 50px;
+      grid-template-columns: repeat(6, 1fr);
+   grid-template-rows: repeat (23, 1fr);
+   background: #FAF9F6;
+/*    justify-items: center; */
+   
+    }
+
+p, h1, h2{
+  text-align: center;
+/*   padding: 5px; */
+}
+
+.item {
+  background: mistyrose;
+
+}
+
+.item1, .item2, .item3, .item4, .item5, .item6, .item7 {
+   grid-column: span 6;
+}
+
+.item2 {
+   grid-column: span 6;
+}
+
+.item8 {
+  width: 120px;
+}
+
+.dance_moves {
+  width: 80%;
+}
+
+.dance_styles {
+  width: 40%
+}
+
+.repeat {
+  width: 60%;
+}
+
+.item32 {
+   grid-column: span 6;
+}
+
+.item33, .item34, .item35, .item36, .item37, .item38 {
+  grid-column: span 2;
+}
+
+.item39 {
+  grid-column: span 6;
+}
+
+.item40 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.item49, .item50 {
+  grid-column: span 6;
+}

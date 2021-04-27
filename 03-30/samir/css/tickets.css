@@ -1,0 +1,212 @@
+header {
+    background-color: #BE141B;
+    width: 100%;
+    height: 320px;
+    }
+  
+  h1,h2, h3{
+    text-transform: uppercase;
+    text-align: center;
+  }
+  h1 {
+      color: white;
+      font-family:Gill Sans MT;
+      font-weight: 700;
+      font-style: normal;
+      text-transform: uppercase;
+      font-size: 57.3px;
+  }
+  
+  h2 {
+    padding-top:50px;
+    font-weight: 200 px;
+  }
+  body {
+      font-family: Gill Sans MT;
+      font-style: normal;
+      font-size: 20px; 
+  }
+  
+  p.columns {
+     color: white;
+     padding: 10px;
+     column-count: 2;
+     column-fill: balance;
+     }
+  
+  p.subsection_text{
+    text-align: center;
+  }
+  
+  .placeholder{
+    text-align:center;
+    padding-bottom: 50px;
+  }
+  
+  .gray_car{
+    float: left;
+    margin-right: 100px;
+  }
+  
+  .gray_car_text{
+    font-size: 18px;
+    margin-top: 95px;
+    margin-right: 80px;
+  }
+  
+  .red_car{
+    float: left;
+    margin-right: 130px;
+  }
+  
+  .red_car_text{ 
+    font-size: 18px;
+    margin-top: 140px;
+    margin-right: 100px;
+    margin-left: 690px;
+  }
+  
+  .white_car{
+    float: left;
+    margin-top: 50px;
+    margin-right: 130px;
+  }
+  
+  .white_car_text{
+    font-size: 18px;
+    margin-top: 150px;
+    margin-right: 100px;
+    margin-left: 690px;
+  }
+  
+  .silver_car{
+    float: left;
+    margin-right: 100px;
+  }
+  
+  .silver_car_text{
+    font-size: 18px;
+    margin-top: 140px;
+    margin-right: 100px;
+    margin-left: 690px;
+  }
+  
+  .grid_contain_footer{
+    background-color: #BE141B;
+    width: 100%;
+    height: 1900px;
+    text-align: center; 
+    margin-top: 100px;
+  }
+  
+  .subfooter{
+    padding-top: 20px;
+  }
+
+  h2.footer_title{
+    color: white;
+  }
+
+  h3.footer_subtitle{
+    padding-top: 50px;
+    color: white;
+  }
+
+  p.footer_text{
+     color: white;
+     text-align: center;
+     padding-bottom: 30px;
+  }
+  
+  strong{
+    color: #ED2024;
+  }
+
+  .grid_contain_multiples {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    text-align: center;
+    row-gap: 5%;
+  }
+
+  /* CODE FOR SLOPE CHART GOES HERE */
+  .here_we_show_proportion{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px;
+    width: 50%;
+  }
+
+  .axis_slope_chart text{
+      font-size: 20px;
+  }
+  /* CODE FOR DUI BAR CHART GOES HERE */
+  .barchart_y_axis{
+    font-size: 16px;
+  }
+
+  .x_axis_barchart{
+    font-size: 16px;
+  }
+
+  .barchart_y_axis path.domain{
+    display: none;
+  }
+  .x_axis_barchart path.domain{
+      display: none;
+  }
+
+  .barchart_y_axis g.tick line{
+    stroke: #717375;
+    stroke-dasharray: 4px 2px;
+  }
+  .x_axis_barchart g.tick line{
+      stroke:  #717375;
+      stroke-dasharray: 4px 2px;
+  }
+
+  .barchart_y_axis g.tick text{
+   fill: #231F20;
+  }
+
+  .x_axis_barchart g.tick text{
+    fill: #231F20;
+ }
+
+
+
+  /* CODE FOR DOT PLOTS GOES HERE */
+  .dotplot_y_axis{
+    font-size: 24px;
+  }
+  .x_axis_dotplot{
+    font-size: 24px;
+  }
+
+  .dotplot_y_axis path.domain{
+    display: none;
+  }
+  .x_axis_dotplot path.domain{
+    display: none;
+  }
+  
+  .dotplot_y_axis g.tick line{
+    stroke: white;
+    stroke-dasharray: 4px 2px;
+  }
+
+  .x_axis_dotplot g.tick line{
+    stroke: white;
+    stroke-dasharray: 4px 2px;
+  }
+
+  .dotplot_y_axis g.tick text{
+    fill: white;
+  }
+
+  .x_axis_dotplot g.tick text{
+    fill: white;
+  }

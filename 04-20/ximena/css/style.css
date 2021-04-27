@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  background-color: #352047;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15pt;
+  text-align: justify;
+  color: white;
+  line-height: 32px;
+  font-weight: lighter;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 5%;
+/*   margin: 0px 450px 0px 450px; */
+}
+
+h1 {
+  text-align: center;
+  color: #de9ba1; 
+  line-height: 125%;
+}
+h2 {
+  color: white;
+  text-align: center;
+  line-height: 115%;
+  font-style: italic;
+  font-weight: bolder;
+}
+
+h3 {
+  color: #de9ba1;
+  text-align: center;
+}
+h4 {
+  color: #de9ba1; 
+  text-align: center;
+  font-weight: bolder;
+}
+
+.placeholder {
+  background-color: white;
+  height: 200px;
+  color: white;
+}
+
+.grid_container {
+  /* this creates a grid   */
+  display: grid;
+  /* this creates columns   */
+  grid-template-columns: 1fr 1fr;
+  /*  this adds a gap in between columns  */
+  column-gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  font-size:20px;
+}

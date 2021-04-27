@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+body {
+  /*   background-color: #d2d4b6; */
+  font-family: 'Roboto', sans-serif;
+  font-size: 20pt;
+  margin: 40px;
+}
+
+h1 {
+  font-size: 100px;
+  line-height: 85%;
+}
+
+h2 {
+  margin-top: 60px;
+  text-align: center;
+}
+
+figure > img {
+  width: 100%;
+  border: 0px;
+  padding: 0%;
+}
+
+figure {
+  margin: 0%;
+  padding: 0%;
+}
+
+footer {
+  /*   background-color: #d2d4b6; */
+  font-family: 'Inter', sans-serif;
+  font-size: 12pt;
+  color: #929fa7;
+  margin-top: 60px;
+}
+
+.easy-pose-image {
+  margin: 20px;
+}
+
+.yoga-poses {
+  /* background-color: pink; */
+  /* height: 400px; */
+  /* margin-top: 100px; */
+  /*  decrease margin-top once images are added-only in for now to allow space to view figure caption   */
+  color: white;
+  border-image: 0px;
+}
+
+.placeholder-chart {
+  background-color: pink;
+  height: 400px;
+  /*   margin-top: 100px; */
+  /*  decrease margin-top once images are added-only in for now to allow space to view figure caption   */
+  color: white;
+}
+
+/* This is the css for the top H1 title and intro paragraph/image */
+
+.yoga-introduction_grid_container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto;
+  justify-content: space-evenly;
+  /*  this adds a gap in between columns  */
+  column-gap: 5%;
+  /* this adds a gap between rows   */
+  row-gap: 10px;
+  margin: 0px;
+}
+
+/* This is the CSS for a yoga poses grid container */
+.yoga-pose_grid_container {
+  /* this creates a grid   */
+  display: grid;
+  /* this creates columns   */
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-content: space-evenly;
+  /*  this adds a gap in between columns  */
+  column-gap: 0%;
+  /* this adds a gap between rows   */
+  row-gap: 10px;
+  margin: 0px;
+}
+
+.byline {
+  /* color: rgb(79, 79, 81); */
+  color: black;
+  font-size: 16pt;
+  font-weight: 400;
+  text-align: center;
+  padding-left: 0;
+  /* margin-top: 410px; */
+  /* update margin-top once images are added - only this size for now to get them in view below the placeholder  */
+}
+
+#intro-paragraph {
+  margin-bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+#trends {
+  margin-bottom: 0px;
+}
+
+#legend {
+  font-size: 12pt;
+  margin: 0 auto;
+  width: 700px;
+}
+
+#legend-pink-swatch {
+  fill: #f27d90;
+  stroke: #f27d90;
+}
+
+#legend-magenta-swatch {
+  fill: #de1f6f;
+  stroke: #de1f6f;
+  padding-left: 20px;
+}
+
+#legend-blue-swatch {
+  fill: #106ea1;
+  stroke: #106ea1;
+  padding-left: 20px;
+}
+
+#legend-gray-swatch {
+  fill: transparent;
+  stroke: #dfdfdf;
+  padding-left: 20px;
+}
+
+#image-wrap {
+  width: 40%;
+  float: right;
+  padding: 0 10px 0 0;
+}
+#Yoga {
+  color: #f37e91;
+  font-size: 150pt;
+  margin-right: 30px;
+}
+
+#ease {
+  color: #006d9e;
+  font-family: 'Dancing Script', cursive;
+  font-size: 175pt;
+}
+
+/* javascript styling here */
+
+/* .x_axis_pie_percentage {
+  font-size: 400pt;
+} */
+/* .piechart-title {
+  fill: red;
+} */

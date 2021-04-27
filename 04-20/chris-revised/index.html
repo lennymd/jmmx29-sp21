@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Putting Charts Together</title>
+    <link href="./d3-geomap/d3-geomap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <!-- Got blockquote info from: https://stackoverflow.com/questions/5670927/how-to-margin-the-body-of-the-page-html -->
+  <body>
+    <div class="header_section page_section">
+      <h1>THE STATE OF PHYSICAL FITNESS IN AMERICA</h1>
+      <!-- Changes to make: Way to make blockquote dynamically change size with font? -->
+      <blockquote>
+        Fewer than 1 in 4 Americans get the recommended amount of exercise each
+        week. But how bad is the problem, and where is it headed as we enter
+        2021?
+      </blockquote>
+    </div>
+    <!-- Change to make: Update CSS for Excluding Work Parenthesis to make font smaller. Less space between h1 and h2 and h2 and table.-->
+    <h2 class="page_section">
+      THE PERCENTAGE OF PEOPLE IN EACH STATE WHO DID ANY TYPE OF EXERCISE IN THE
+      LAST MONTH (Excluding Work)
+    </h2>
+
+    <div class="map_section page_section">
+      <!-- Change to make: Fix table spacing so states moved over from numbers. A little less space between h3 and table text -->
+      <div class="tables">
+        <div class="most_active_states">
+          <h4>MOST ACTIVE STATES</h4>
+          <table style="width: 70%" align="center">
+            <tr>
+              <td><strong>1</strong></td>
+              <td>Utah</td>
+              <td>73%</td>
+            </tr>
+            <tr>
+              <td><strong>2</strong></td>
+              <td>Colorado</td>
+              <td>72%</td>
+            </tr>
+            <tr>
+              <td><strong>3</strong></td>
+              <td>Washington D.C.</td>
+              <td>72%</td>
+            </tr>
+            <tr>
+              <td><strong>4</strong></td>
+              <td>Alaska</td>
+              <td>71%</td>
+            </tr>
+            <tr>
+              <td><strong>5</strong></td>
+              <td>Vermont</td>
+              <td>71%</td>
+            </tr>
+          </table>
+        </div>
+        <div class="least_active_states">
+          <h5>LEAST ACTIVE STATES</h5>
+          <table style="width: 70%" align="center">
+            <tr>
+              <td><strong>1</strong></td>
+              <td>North Dakota</td>
+              <td>36%</td>
+            </tr>
+            <tr>
+              <td><strong>2</strong></td>
+              <td>South Dakota</td>
+              <td>38%</td>
+            </tr>
+            <tr>
+              <td><strong>3</strong></td>
+              <td>Mississippi</td>
+              <td>38%</td>
+            </tr>
+            <tr>
+              <td><strong>4</strong></td>
+              <td>Rhode Island</td>
+              <td>45%</td>
+            </tr>
+            <tr>
+              <td><strong>5</strong></td>
+              <td>Tennessee</td>
+              <td>46%</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <!-- Changes to make: Input interactive map -->
+      <div class="d3-geomap" id="map"></div>
+    </div>
+
+    <div class="page_section">
+      <h2>HOW AMERICANS SPEND THEIR TIME</h2>
+      <p>
+        When it comes to how Americans are choosing to spend their time, it’s
+        clear that exercise is not a priority. In fact, the average American
+        spend less than 20 minutes exercising each day, nearly ten times the
+        amount of time they watch TV each day. Though not all Americans
+        participate in each activity each day (the unemployed, for instance),
+        the chart below shows how the average American spends their day.
+      </p>
+      <h3>
+        AVERAGE AMERICAN'S DAY<br />
+        HOURS SPENT IN EACH ACTIVITY
+      </h3>
+    </div>
+    <!-- Add # labels to charts and header to 2nd chart. Part of label cut off? How to change colors from chromatic scale js? -->
+    <div class="side_by_side_pie">
+      <div id="piechart"><h5>24 HOUR DAY</h5></div>
+
+      <div id="piechart2"><h5>"FUN" ACTIVITIES</h5></div>
+    </div>
+
+    <div class="page_section">
+      <h2>LOOKING AHEAD TO THE FUTURE</h2>
+      <p>
+        So does the future look as bleak as the present? The good news is that
+        thing are trending upward. All adult age groups have seen significant
+        growth in exercise rates, as measured by the percentage of adults who
+        meet CDC guidelines for daily exercise (at least a 1 hour per day of
+        moderate-intensity aerobic exercise).
+      </p>
+
+      <h3>
+        PERCENTAGE OF AMERICANS WHO MEET PHYSICAL EXERCISE RECOMMENDATIONS
+      </h3>
+    </div>
+    <!-- Align center. Fix x and y axis. Add labels to end of lines. Remove tick marks. Thicken lines.  -->
+
+    <div id="linechart"></div>
+    <!-- Exercise section -->
+    <div class="exercise_section">
+      <div class="page_section">
+        <h2>WHAT ARE THE MOST COMMON EXERCISES?</h2>
+        <p>
+          While it’s no surprise that walking is the most common exercise, it is
+          interesting that each of the top 5 are traditionally known as
+          individual sports. Given the Impact of COVID-19 and closure of gyms,
+          we may see a surge in home cardio equipment in the next year.
+        </p>
+      </div>
+      <div class="illustrations">
+        <img
+          src="./images/illustrations.png"
+          alt="Illustrations"
+          style="height: 100%; width: 100%; object-fit: contain"
+        />
+      </div>
+    </div>
+
+    <!--Only Javascript Below This Line-->
+    <!-- Do all the stuff with V4 -->
+    <script src="https://d3js.org/d3.v5.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <script src="./js/linechart.js"></script>
+    <script src="./js/piechart.js"></script>
+    <script src="./js/piechart2.js"></script>
+
+    <!-- Do all the stuff with V5 -->
+    <script src="https://unpkg.com/topojson@3/dist/topojson.min.js"></script>
+    <script src="./d3-geomap/d3-geomap.min.js"></script>
+
+    <script>
+      var map = d3
+        .choropleth()
+        .geofile('./d3-geomap/topojson/countries/USA.json')
+        .projection(d3.geoAlbersUsa)
+        .column('Mortality')
+        .unitId('fips')
+        .scale(1000)
+        .legend(true);
+
+      d3.csv('./data/mortality.csv').then(data => {
+        map.draw(d3.select('#map').datum(data));
+      });
+    </script>
+  </body>
+</html>
